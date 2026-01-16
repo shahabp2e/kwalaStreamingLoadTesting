@@ -1,0 +1,174 @@
+
+version: "3.9"
+
+services:
+  service1:
+    build: .
+    container_name: service1
+    environment:
+      SERVICE_NAME: service_1
+      SERVICE_PORT: 6001
+      TABLE_NAME: service_1_polygon_amoy
+      CHAIN: amoy
+      FUNCTION_SIGNATURE: "function incCounter1()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x220bE055a8F7c982C7d21575A3F33cF3370be953"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6001:6001"
+
+  service2:
+    build: .
+    container_name: service2
+    environment:
+      SERVICE_NAME: service_2
+      SERVICE_PORT: 6002
+      TABLE_NAME: service_2_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter2()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x7cAD2EEf3d5d2A61542F668D4E1CFD327175A471"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6002:6002"
+
+  # Repeat up to service10
+  service3:
+    build: .
+    container_name: service3
+    environment:
+      SERVICE_NAME: service_3
+      SERVICE_PORT: 6003
+      TABLE_NAME: service_3_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter3()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x18B7607568EaF0481f9612eC877B17997B6e1424"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6003:6003"   
+  
+  service4:
+    build: .
+    container_name: service4
+    environment:
+      SERVICE_NAME: service_4
+      SERVICE_PORT: 6004
+      TABLE_NAME: service_4_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter4()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0xCeF7a7ECE297B4d2a9E77776DF5D5D56EEb22646"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6004:6004"
+
+  service5:
+    build: .
+    container_name: service5
+    environment:
+      SERVICE_NAME: service_5
+      SERVICE_PORT: 6005
+      TABLE_NAME: service_5_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter5()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x9cB3Cb3fbf533D5Ba5C2d332ceEF6d5e3B871648"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6005:6005"
+
+  service6:
+    build: .
+    container_name: service6
+    environment:
+      SERVICE_NAME: service_6
+      SERVICE_PORT: 6006
+      TABLE_NAME: service_6_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter6()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x43375C58e57c6d2b68ED593C6A1f00d2180D1603"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6006:6006"
+
+  service7:
+    build: .
+    container_name: service7
+    environment:
+      SERVICE_NAME: service_7
+      SERVICE_PORT: 6007
+      TABLE_NAME: service_7_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter7()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x863B9AE8D0DFF1B481496fC66603d871fe8DBffF"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6007:6007"
+
+  service8:
+    build: .
+    container_name: service8
+    environment:
+      SERVICE_NAME: service_8
+      SERVICE_PORT: 6008
+      TABLE_NAME: service_8_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter8()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0xFcCd8841Dc18A7bE3E9403E06A40368EE7512603"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6008:6008"
+
+  service9:
+    build: .
+    container_name: service9
+    environment:
+      SERVICE_NAME: service_9
+      SERVICE_PORT: 6009
+      TABLE_NAME: service_9_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter9()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x55520549AF5b60478FbC178b19a05f29901d5789"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6009:6009"
+
+  service10:
+    build: .
+    container_name: service10
+    environment:
+      SERVICE_NAME: service_10
+      SERVICE_PORT: 6010
+      TABLE_NAME: service_10_polygon_amoy
+      CHAIN: polygon_amoy
+      FUNCTION_SIGNATURE: "function incCounter10()"
+      CONTRACT_ADDRESS: "0xb14b874789683B176AF878A08857b924F6422FE2"
+      BACKEND_WALLET: "0x4E2F9b15DbEDD27a8899913282681B51B129F8d4"
+      RPC_URL: "https://rpc-amoy.polygon.technology/"
+      CHAIN_ID: 80002
+      TIME_INTERVAL_MS: 2000
+    ports:
+      - "6010:6010"
